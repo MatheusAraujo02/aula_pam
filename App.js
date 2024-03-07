@@ -4,6 +4,7 @@ import { StyleSheet, View } from 'react-native';
 // import Mensagem from './src/ex_2';
 import Atividade1 from './src/atv_1';
 
+
 export default function App() {
   return (
     <View style={styles.container}>
