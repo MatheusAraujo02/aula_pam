@@ -1,7 +1,7 @@
-import * as React from 'react';
 import { View, Text, StyleSheet, Image } from 'react-native'; 
 
-import logo from 'D:/TEMP/matheusaraujo/aula_pam/assets/002-1-react-native.png';
+// import logo from 'D:/TEMP/matheusaraujo/aula_pam/assets/002-1-react-native.png';
+import logo from '../../assets/002-1-react-native.png'
 
 import styles from './styles';
 
@@ -15,9 +15,9 @@ const Saudacoes =(props) =>{
 
 export default function Atividade1 () { 
 
-    return(
+    return(     
         <View style={styles.container}>
-            <Image source={logo} style={styles.image} />
+            <Image source={logo} style={styles.imagem} />
             <Text style={styles.paragraph}>
                 Exemplo 2
             </Text>
