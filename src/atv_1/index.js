@@ -1,5 +1,7 @@
 import { View, Text, StyleSheet, Image } from 'react-native'; 
 
+import Ola from './ola';
+
 // import logo from 'D:/TEMP/matheusaraujo/aula_pam/assets/002-1-react-native.png';
 import logo from '../../assets/002-1-react-native.png'
 
