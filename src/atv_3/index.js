@@ -22,30 +22,30 @@ export default function Atividade_3 () {
  
     return(
         <View style={styles.container}>
-            <Text style={styles.titulo}>Exemplo 3</Text>
-        
-            <TouchableOpacity style={styles.botaoOla} onPress={() => mensagem()} >
-                <Text style={styles.txtBotaoOla}>Diga, "Olá, Mundo"</Text>
-            </TouchableOpacity>
+            <Text style={styles.titulo}>Atividade 3</Text>
+
             
-            <View style={styles.container1}>  
-            <TouchableOpacity style={styles.botao} onPress={() => incrementar()}>
-                <Text style={styles.txtBotao}>+</Text>
+            <View style={styles.containerLadoLado}>
+            
+            <TouchableOpacity style={[styles.botao, styles.botaoContainer]} onPress={() => decrementar()}>
+                <Text style={styles.txtBotao}>-</Text>
             </TouchableOpacity>
             
             <Text style={styles.titulonum}>{numero}</Text>
 
-            <TouchableOpacity style={styles.botao} onPress={() => decrementar()}>
-                <Text style={styles.txtBotao}>-</Text>
+            <TouchableOpacity style={[styles.botao, styles.botaoContainer]} onPress={() => incrementar()}>
+                <Text style={styles.txtBotao}>+</Text>
             </TouchableOpacity>
+
             </View>
+
             
-            <View style={styles.btZerar}>
+           
             <TouchableOpacity style={styles.botao} onPress={() => zerar()}>
                 <Text style={styles.txtBotao}>Zerar</Text>
 
             </TouchableOpacity>
-            </View>
+            
         </View>
     );
 }

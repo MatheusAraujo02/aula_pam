@@ -8,16 +8,26 @@ const styles = StyleSheet.create({
        borderRadius: 20, 
        alignItems: 'center',
        padding: 20,
+       
     
 },
 
-container1: {
+containerLadoLado: {
+    // borderWidth: 2, 
+    width: '80%',
+    // height: 100,
     flexDirection: 'row',
-    justifyContent: 'center',
-    width: '10%',
-
+    justifyContent:'space-between',
+    alignItems: 'center',
+    marginTop: 20,
 
 },
+botaoContainer: {
+    width: '30%',
+    marginHorizontal: 0,
+
+},
+
 titulo: {
     fontSize: 30,
     fontWeight: 'bold',
@@ -29,38 +39,23 @@ titulonum: {
     margin: 20,
 
 },
-botaoOla: {
+
+botao: {
     alignItems: 'center',
-    width: 'auto',
+    width: '80%',
     padding: 10,
     margin: 20,
     backgroundColor: '#000',
     justifyContent: 'center',
     borderRadius: 20,
-},
-txtBotaoOla: {
-    fontSize: 25,
-    color: '#fafafa'
-},
-
-botao: {
     alignItems: 'center',
-    width: '100%',
-    padding: 3,
-    margin: 20,
-    backgroundColor: '#000',
-    justifyContent: 'center',
-    borderRadius: 10,
+
     
 },
 txtBotao: {
     fontSize: 25,
     color: '#fafafa'
     
-},
-btZerar: {
-    width: 'auto',
-    alignItems: 'center',
 },
 
 
