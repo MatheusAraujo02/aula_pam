@@ -15,7 +15,7 @@ import styles from './styles';
   // );
 // }
 
-export default function Atividade1 () { 
+export default function Atividade_1 () { 
 
     return(     
         <View style={styles.container}>

@@ -14,6 +14,10 @@ export default function Exemplo_4 () {
         setTxtDigitado(txt);
     }
 
+    function handleExibeTexto (){
+        setTxtTela(txt2);
+        setTxt2('');
+    }
     return(
         <View style={styles.container}>
             <Text style={styles.titulo}>Exemplo 4</Text>
@@ -23,7 +27,6 @@ export default function Exemplo_4 () {
             <TextInput 
                 style={styles.input}
                 onChangeText={(valor) => atualizaTextoHandle(valor)}
-                value={txt2}
             /> 
 
             <View style={styles.linha}></View>
@@ -37,8 +40,11 @@ export default function Exemplo_4 () {
             />
 
             <Pressable 
-            style={({pressed }) => pressed ? [styles.botao, styles.botaoPress] : styles.botao}>
-                <Text style={styles.txtBotao}>Exibir texto </Text>
+            style={({ pressed }) => pressed ? [styles.botao, styles.botaoPress] : styles.botao}
+            onPress={() => handleExibeTexto() }
+            
+            >
+                <Text style={styles.txtBotao}> Exibir texto </Text>
             </Pressable>
         </View>
 
