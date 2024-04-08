@@ -8,6 +8,7 @@ const styles = StyleSheet.create({
         alignItems: 'center',
         backgroundColor: '#ffcdd2',
         padding: 8,
+        borderRadius: 20,
     },
     titulo: {
         fontSize: 30,
@@ -18,34 +19,34 @@ const styles = StyleSheet.create({
 
     },
     texto: {
-        fontSize: 25,
+        fontSize: 30,
         marginVertical: 10,
         padding: 5,
         color: '#b71c1c'
     },
-    nome: {
-        marginRight: '71%', 
+    nomeSobrenome: {
+        width: 450 ,
+        color: '#b71c1c',
+        fontWeight: 'bold'
     },
-    sobrenome: {
-        marginRight: '67%'
-    },
+    // sobrenome: {
+    //    width: 450,
+    //    color: '#b71c1c',
+    //    fontWeight: 'bold'
+    // },
     input: {          
         fontSize: 25,
-        width: '80%',
+        width: 450,
         textAlign: 'center',
         borderWidth: 3,
         borderColor: '#b71c1c',
-        borderRadius: 20,
-       margin: 3,
-    },
-    linha: {    
-        borderBottomWidth: 3,
-        borderColor: '#b71c1c',
-        marginVertical: 20,
-        width: '100%',
+        borderRadius: 10,
+        margin: 3,
+        marginBottom: 20,
+        height: 45
     },
     botao: {
-        width: '80%',
+        width: 250,
         padding: 16,
         alignItems: 'center',
         borderRadius: 20,
@@ -63,8 +64,19 @@ const styles = StyleSheet.create({
     txtBotaoPress: {
         color: '#b71c1c',
 
-    }
-
+    },
+botaoApg: {
+    width: 250,
+    padding: 16,
+    alignItems: 'center',
+    borderRadius: 20,
+    backgroundColor: '#fff',
+    marginVertical: 20,
+    
+},
+botaoPressApg: {
+    backgroundColor: '#b71c1c'
+}
 })
 
 export default styles;

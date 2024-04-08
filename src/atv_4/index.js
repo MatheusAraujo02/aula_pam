@@ -6,11 +6,17 @@ import styles from './styles';
 export default function Atividade_4() {
 
     const [txtEscrito, setTxtEscrito] = useState('');
-    const [mensagem, setMensagem] = useState('Insira nome e Sobrenome');
-    const [txtTela, setTxtTela] = useState('');
+    const [txtSobrenome, setTxtSobrenome] = useState('');
+    const [mensagem, setMensagem] = useState('Insira o nome e Sobrenome');
 
-    function handleExibeTxt(txt) {
-        setTxtEscrito(txt)
+    function handleExibeTxt() {
+        setMensagem(`${txtEscrito} ${txtSobrenome}`);
+        setTxtEscrito('');
+        setTxtSobrenome('');
+    }
+
+    function handleApagaTxt() {
+        setMensagem('Insira o nome e sobrenome')     
     }
 
     return(
@@ -19,25 +25,32 @@ export default function Atividade_4() {
 
             <Text style={styles.texto}> {mensagem} </Text>
             
-            <Text style={styles.nome}>Nome</Text>
+            <Text style={styles.nomeSobrenome}>Nome</Text>
 
             <TextInput 
             style={styles.input} 
-            onChangeText={(valor) => handleExibeTxt(valor)}
+            onChangeText={(entrada) => setTxtEscrito(entrada)}
+            value={txtEscrito}
             />
 
-            <Text style={styles.sobrenome}>Sobrenome</Text>
+            <Text style={styles.nomeSobrenome}>Sobrenome</Text>
            
              <TextInput
              style={styles.input}
-                           
+            onChangeText={(entrada) => setTxtSobrenome(entrada)}
+            value={txtSobrenome}      
              />
 
              <Pressable 
-            style={({ pressed }) => pressed ? [styles.botao, styles.botaoPress] : styles.botao}
-            onPress={() => setMensagem(txtEscrito)}    
+            style={({ pressed }) => pressed ? [styles.botao, styles.botaoPress] : styles.botao} onPress={() => handleExibeTxt() }    
             >
                 Exibir Texto
+            </Pressable>
+
+            <Pressable 
+            style={({ pressed }) => pressed ? [styles.botaoApg, styles.botaoPressApg] : styles.botaoApg} onPress={() => handleApagaTxt() }    
+            >
+                Voltar
             </Pressable>
         </View>
     )
