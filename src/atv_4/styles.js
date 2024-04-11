@@ -51,7 +51,7 @@ const styles = StyleSheet.create({
         alignItems: 'center',
         borderRadius: 20,
         backgroundColor: '#b71c1c',
-        marginVertical: 20,
+        marginVertical: 10,
     },
     botaoPress: {
         backgroundColor: '#fff',
@@ -71,7 +71,7 @@ botaoApg: {
     alignItems: 'center',
     borderRadius: 20,
     backgroundColor: '#fff',
-    marginVertical: 20,
+    marginVertical: 10,
     
 },
 botaoPressApg: {
