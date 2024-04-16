@@ -2,7 +2,6 @@ import { useState} from 'react';
 import { View, Text, TextInput, Pressable } from 'react-native';
 
 import styles from './styles';
-import symbolicateStackTrace from 'react-native/Libraries/Core/Devtools/symbolicateStackTrace';
 
 export default function Exemplo_5() {
 
@@ -19,15 +18,15 @@ export default function Exemplo_5() {
 
     return(
         <View style={styles.container}>
-            <Text style ={style.titulo}> Exemplo5 </Text>
+            <Text style ={styles.titulo}> Exemplo5 </Text>
 
-            <Text style={style.txtSaida}> Calculadora básica </Text>
+            <Text style={styles.txtSaida}> Calculadora básica </Text>
 
-            <Text style={style.textLabel}> 1° número </Text>
+            <Text style={styles.textLabel}> 1° número </Text>
             <TextInput
                 style={
                     [
-                        style.txtEntrada,
+                        styles.txtEntrada,
                             isFocusN1 ?
                                 {
                                     borderColor: '#C51162',
@@ -47,10 +46,10 @@ export default function Exemplo_5() {
             <Text style={styles.txtSaida}> + </Text>
 
             <Text style={styles.textLabel}> 2º número </Text> 
-            TextInput
+            <TextInput
                 style={
                     [
-                        style.txtEntrada,
+                        styles.txtEntrada,
                             isFocusN2 ?
                                 {
                                     borderColor: '#C51162',
@@ -64,14 +63,14 @@ export default function Exemplo_5() {
                 onBlur={() => setIsFocusN2(false)}
                 onChangeText={(num2) => setN2(num2)}
                 value={n2}
-
+            />
             <Text style={[styles.txtSaida, {margin: 0}]}> = </Text>
 
-            <Text style={styles.txtLabel}> Total </Text>
+            <Text style={styles.textLabel}> Total </Text>
             <TextInput
                 style={
                     [
-                        style.txtEntrada,
+                        styles.txtEntrada,
                             isFocusTotal ?
                                 {
                                     borderColor: '#C51162',

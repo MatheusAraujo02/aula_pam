@@ -13,7 +13,7 @@ import Exemplo_5 from './src/ex_5';
 export default function App() {
   return (
     <View style={styles.container}>
-      <Exemplo_5 />
+      < Exemplo_5 />
       <StatusBar style="auto" />
     </View>
   );
