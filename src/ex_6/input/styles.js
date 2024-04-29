@@ -5,8 +5,11 @@ const styles = StyleSheet.create ({
         height: 80,
         textAlign: 'center',
         width: '50%',
-        color: 'lightgrey',
+        color: '#eee',
         fontSize: 50,
+        backgroundColor: '#aaa',
+        borderRadius: 20,
+        margin: 5,
     }
 });
 
