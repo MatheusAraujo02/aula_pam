@@ -2,6 +2,7 @@ import { View, Text } from 'react-native';
 
 import styles from './styles';
 import Input from './input';
+import Botao from './botao';
 
 export default function Exemplo_6 (){
     return(
@@ -11,6 +12,8 @@ export default function Exemplo_6 (){
                 <Input placeholder='Peso'  />
                 <Input placeholder='Altura'  />
             </View>
+
+            <Botao>Calcular</Botao>
         </View>
 
     )
