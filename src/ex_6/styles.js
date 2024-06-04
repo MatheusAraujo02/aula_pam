@@ -25,6 +25,10 @@ const styles = StyleSheet.create({
         fontSize: 65,
         marginVertical: 15,
     },
+    mensagem: {
+        fontSize: 40,
+
+    },
 })
 
 export default styles;
