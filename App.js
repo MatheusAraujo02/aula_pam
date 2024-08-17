@@ -1,12 +1,13 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, View } from 'react-native';
 
-import NavegacaoStack from './src/navegacao/stack';
+import NavegacaoBottomTab from './src/navegacao/bottomTab';
+import NavegacaoDrawer from './src/navegacao/drawer';
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <  NavegacaoStack />
+      <  NavegacaoDrawer />
       <StatusBar style="auto" />
     </View>
   );
